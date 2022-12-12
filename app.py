@@ -29,10 +29,10 @@ def get_access_token() -> str:
                 return token
         except Exception as e:
             print(f'レスポンスの処理で失敗しました　エラー:  {e}')
-            return False
+            return 
     else:
         print(f'get_acdess_token requests.getの結果がエラーでした エラーコード{response.status_code}')
-        return False
+        return 
 
 
 def get_latest_report_id(token)-> str:
@@ -68,10 +68,10 @@ def get_latest_report_id(token)-> str:
                 return id
         except Exception as e:
             print(f'レスポンスの処理で失敗しました　エラー:  {e}')
-            return False
+            return 
     else:
         print(f'get_latest_report_id requests.getの結果がエラーでした エラーコード{response.status_code}')
-        return False
+        return 
 
 
 
